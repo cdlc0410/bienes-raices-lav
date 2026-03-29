@@ -6,9 +6,9 @@
 }
 
 .boton--amarillo {
-    @include m.boton(v.$amarillo, uppercase, block)
+    @include m.boton(v.$amarillo)
 }
 
 .boton--verde {
-    @include m.boton(v.$verde, capitalize )
+    @include m.boton(v.$verde)
 }

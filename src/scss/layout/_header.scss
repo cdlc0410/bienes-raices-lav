@@ -3,13 +3,13 @@
 
 .no-webp .landing {
     background-image: url('/build/img/header.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .webp .landing {
     background-image: url('/build/img/header.webp');
+}
+
+.landing {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -21,13 +21,13 @@
 
     &.landing {
         @include m.tablet {
-            min-height: 60rem;
+            min-height: 65rem;
         }
 
         .header__content {
             & {
                 @include m.tablet {
-                    min-height: 60rem;
+                    min-height: 65rem;
                 }
             }
         }        

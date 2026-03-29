@@ -12,3 +12,38 @@
     display: flex;
     justify-content: flex-end;
 }
+
+.alinear-centro {
+    display: flex;
+    justify-content: center;
+}
+
+// Text
+.text-white {
+    color: v.$blanco;
+}
+
+.text-bold {
+    font-weight: v.$bold;
+}
+
+.text-black {
+    font-weight: v.$black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// Display
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
