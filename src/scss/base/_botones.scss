@@ -1,0 +1,14 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.boton {
+    @include m.boton()
+}
+
+.boton--amarillo {
+    @include m.boton(v.$amarillo, uppercase, block)
+}
+
+.boton--verde {
+    @include m.boton(v.$verde, capitalize )
+}

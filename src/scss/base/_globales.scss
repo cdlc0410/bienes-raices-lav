@@ -1,0 +1,80 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+    line-height: 1.8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+p {
+    color: v.$negro;
+    font-size: 2rem;
+}
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.container--bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+
+    a {
+        width: 100%;
+    }
+
+    @include m.tablet {
+
+        a {
+        width: 30%;
+        }
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+picture {
+    width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: v.$fuente_principal;
+    margin: calc(v.$separacion / 2) 0;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
