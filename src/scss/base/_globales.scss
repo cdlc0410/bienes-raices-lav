@@ -16,6 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-color: v.$blanco;
 }
 p {
     color: v.$negro;
