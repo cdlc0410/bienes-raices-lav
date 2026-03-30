@@ -10,50 +10,54 @@
         gap: 2rem;
     }
 
-    .blog {
-        &__entrada {
+}
 
-            margin-bottom: 2rem;
-            border-bottom: 1px solid v.$gris;
+.blog {
+    display: flex;
+    flex-direction: column;
+    
+    &__entrada {
 
-            @include m.tablet {
-                display: grid;
-                grid-template-columns: minmax(0,1fr) minmax(0,2fr);
-                gap: 2rem;
-            }
+        margin-bottom: 2rem;
+        border-bottom: 1px solid v.$gris;
 
-            &:last-of-type {
-                margin-bottom: 0;
-                border-bottom: none;
+        @include m.tablet {
+            display: grid;
+            grid-template-columns: minmax(0,1fr) minmax(0,2fr);
+            gap: 2rem;
+        }
 
-            }
+        &:last-of-type {
+            margin-bottom: 0;
+            border-bottom: none;
+
         }
     }
+}
 
-    .blog__text {
-        a {
-            color: v.$negro;
+.blog__text {
+    a {
+        color: v.$negro;
+    }
+    h4 {
+        margin-top: 1rem;
+        line-height: 1.4;
+
+        @include m.tablet {
+            margin: 0;
         }
-        h4 {
+
+        &::after {
+            content: '';
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: v.$verde;
             margin-top: 1rem;
-            line-height: 1.4;
-
-            @include m.tablet {
-                margin: 0;
-            }
-
-            &::after {
-                content: '';
-                display: block;
-                width: 15rem;
-                height: .5rem;
-                background-color: v.$verde;
-                margin-top: 1rem;
-            }
         }
-        span {
-            color: v.$amarillo;
-            font-weight: v.$bold;
-        }
+    }
+    span {
+        color: v.$amarillo;
+        font-weight: v.$bold;
     }
 }
