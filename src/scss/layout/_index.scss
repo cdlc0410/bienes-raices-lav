@@ -2,10 +2,12 @@
 @forward 'nav';
 @forward 'footer';
 
-/** Index **/
-
+/** index.html **/
 @forward 'iconos';
 @forward 'propiedades';
 @forward 'contactar';
 @forward 'inferior';
 @forward 'testimoniales';
+
+/** nosotros.html **/
+@forward 'about-us';
