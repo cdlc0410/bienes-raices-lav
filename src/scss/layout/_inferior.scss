@@ -46,18 +46,23 @@
         @include m.tablet {
             margin: 0;
         }
-
-        &::after {
-            content: '';
-            display: block;
-            width: 15rem;
-            height: .5rem;
-            background-color: v.$verde;
-            margin-top: 1rem;
-        }
     }
+}
+
+.meta-info {
     span {
         color: v.$amarillo;
         font-weight: v.$bold;
+    }
+}
+
+.blog-underline {
+    &::after {
+        content: '';
+        display: block;
+        width: 15rem;
+        height: .5rem;
+        background-color: v.$verde;
+        margin-top: 1rem;
     }
 }
