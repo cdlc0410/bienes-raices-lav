@@ -33,9 +33,11 @@
     text-align: center;
     padding: 1rem 3rem;
     margin-top: calc(v.$separacion / 2);
+    border: none;
 
     transition: background-color .3s ease;
     &:hover {
         background-color: color.adjust($bg-color, $lightness: -5%);
+        cursor: pointer;
     }
 }
