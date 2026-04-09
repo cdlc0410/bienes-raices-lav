@@ -3,6 +3,8 @@
 
 .navbar {
 
+    display: none;
+
     a {
         color: v.$blanco;
         font-size: 2.2rem;
@@ -21,4 +23,55 @@
         font-size: 1.8rem;
         gap: 2rem;
     }
+}
+
+.menu {
+
+    width: 95%;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu__logo {
+        width: auto;
+        height: auto;
+
+        @include m.tablet {
+            width: 30rem;
+        }
+    }
+}
+
+.menu__bar {
+    @include m.tablet {
+        display: none;
+    }
+
+    img {
+        width: auto;
+        max-height: 5rem;
+
+        cursor: pointer;
+    }
+
+
+}
+
+.dark-mode {
+
+    display: flex;
+    align-items: center;
+
+    img {
+        width: auto;
+        height: 3rem;
+        cursor: pointer;
+    }
+}
+
+.expand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
