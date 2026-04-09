@@ -55,4 +55,14 @@
         margin: 0;
         width: auto;
     }
+
+    input[type="submit"] {
+        display: block;
+        width: 100%;
+        
+        @include m.tablet {
+                display: inline;
+                width: auto;
+            }
+    }
 }
