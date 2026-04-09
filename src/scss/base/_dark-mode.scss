@@ -1,0 +1,46 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.dark-mode {
+    background-color: color.adjust(v.$gris_oscuro, $lightness: -10%);
+
+    p {
+        color: v.$blanco;
+    }
+
+    a,
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: v.$gris;
+    }
+
+    .propiedades__card {
+        background-color: v.$gris_oscuro;
+        border: 1px solid v.$gris_oscuro;
+
+
+    }
+
+    .propiedades__price {
+        color: v.$verde;
+    }
+
+    .iconos-propiedades {
+        
+        &__content {
+
+            img {
+                filter: invert(100%);
+            }
+        }
+    }
+
+    .about-us {
+        blockquote {
+            color: v.$blanco;
+        }
+    }
+}

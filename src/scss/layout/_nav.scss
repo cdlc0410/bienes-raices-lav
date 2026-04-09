@@ -28,13 +28,15 @@
 
     visibility: hidden;
     opacity: 0;
+    height: 0;
 
     @include m.tablet {
         visibility: visible;
         opacity: 1;
+        height: auto;
     }
 
-    transition: visibility .3s ease-in-out, opacity 0.5s linear;
+    transition: visibility .3s ease-in-out, opacity .3s linear, height .3s linear;
 }
 
 .navbar--footer {
@@ -75,25 +77,30 @@
 
 }
 
-.dark-mode {
+.dark-mode-boton {
 
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    @include m.tablet {
+        margin-top: 0;
+    }
+
     img {
         width: auto;
         height: 3rem;
-        cursor: pointer;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
 .expand {
     visibility: visible;
     opacity: 1;
-
-    @include m.tablet {
-        visibility: visible;
-        opacity: 1;
-    }
+    height: auto;
 }

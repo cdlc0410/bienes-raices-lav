@@ -22,7 +22,15 @@
     &__card {
         background-color: color.adjust(v.$gris, $lightness: 10%);
         border: 1px solid color.adjust(v.$gris, $lightness: -5%);
-        
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
     }
 
     @include m.tablet {
