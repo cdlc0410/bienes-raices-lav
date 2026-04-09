@@ -46,11 +46,11 @@
 
     .formulario {
 
-        legend {
-            color: v.$gris;
-        }
-
-        label {
+        legend,
+        label,
+        input:not([type="submit"]),
+        textarea,
+        select {
             color: v.$gris;
         }
 
@@ -60,9 +60,6 @@
             
             background-color: v.$gris_oscuro;
             border: .1rem solid v.$gris_oscuro;
-
-            color: v.$gris;
-
 
         }
     }
