@@ -1,6 +1,6 @@
 {
   "name": "bienes-raices-lav",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Curso Desarrollo Web Completo",
   "main": "gulpfile.js",
   "scripts": {
