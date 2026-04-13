@@ -1,0 +1,79 @@
+[
+    {
+        "id": 0,
+        "titulo": null,
+        "img_ruta": "/build/img/anuncio",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": true
+    },
+    {
+        "id": 1,
+        "titulo": "Casa de Lujo en el Lago",
+        "img_ruta": "/build/img/anuncio1",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": true
+    },
+    {
+        "id": 2,
+        "titulo": "Casa Terminados de Lujo",
+        "img_ruta": "/build/img/anuncio2",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": true
+    },
+    {
+        "id": 3,
+        "titulo": "Casa de Lujo con Alberca",
+        "img_ruta": "/build/img/anuncio3",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": true
+    },
+    {
+        "id": 4,
+        "titulo": "Casa de Urbanismo",
+        "img_ruta": "/build/img/anuncio4",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": false
+    },
+    {
+        "id": 5,
+        "titulo": "Casa Cerca de la Ciudad",
+        "img_ruta": "/build/img/anuncio5",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": true
+    },
+    {
+        "id": 6,
+        "titulo": "Casa con Muelle Privado",
+        "img_ruta": "/build/img/anuncio6",
+        "descripcion_corta": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dignissimos.",
+        "precio": 3000000,
+        "wc": 3,
+        "estacionamientos": 3,
+        "habitaciones": 4,
+        "disponible": true
+    }
+]

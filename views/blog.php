@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/build/css/app.css">
-    <title>Bienes Raices</title>
-</head>
-<body>
-    <header class="header">
-        <div class="header__content container">
-            <div class="container--bar">
-                <div class="menu">
+<?php 
 
-                    <a href="/">
-                        <img class="menu__logo" loading="lazy" src="/build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                    </a>
-    
-                    <div class="menu__bar">
-                        <img src="/build/img/barras.svg" alt="menu responsive">
-                    </div>
-                </div>
+    require '../includes/app.php';
+    require FUNCIONES_URL;
 
-                <nav class="navbar">
-                    <a href="/views/nosotros.html">Nosotros</a>
-                    <a href="/views/anuncios.html">Anuncios</a>
-                    <a href="/views/blog.html">Blog</a>
-                    <a href="/views/contacto.html">Contacto</a>
-                    <div class="dark-mode-boton">
-                        <img src="/build/img/dark-mode.svg" alt="darkmode">
-                    </div>
-                </nav>
+    $opt = [ 'pagina' => 'blog' ];
 
-            </div> <!--.container--bar-->
-        </div>
-    </header>
+    incluir_template( 'header' , $opt );
+?>
 
     <main class="container seccion blog contenido-centrado">
         <h1>Nuestro Blog</h1>
@@ -46,7 +19,7 @@
                 </picture>
             </div>
             <div class="blog__text">
-                <a href="/views/entrada.html">
+                <a href="/views/entrada.php">
                     <h4 class="blog-underline">Terraza en el Techo de tu Casa</h4>
                     <p class="meta-info">Escrito el: <span>20/03/2026</span> por: <span>Admin</span>.</p>
                     <p>
@@ -64,7 +37,7 @@
                 </picture>
             </div>
             <div class="blog__text">
-                <a href="/views/entrada.html">
+                <a href="/views/entrada.php">
                     <h4 class="blog-underline">Guia para la decoracion de tu Hogar</h4>
                     <p class="meta-info">Escrito el: <span>20/03/2026</span> por: <span>Admin</span>.</p>
                     <p>
@@ -82,7 +55,7 @@
                 </picture>
             </div>
             <div class="blog__text">
-                <a href="/views/entrada.html">
+                <a href="/views/entrada.php">
                     <h4 class="blog-underline">Terraza en el Techo de tu Casa</h4>
                     <p class="meta-info">Escrito el: <span>20/03/2026</span> por: <span>Admin</span>.</p>
                     <p>
@@ -100,7 +73,7 @@
                 </picture>
             </div>
             <div class="blog__text">
-                <a href="/views/entrada.html">
+                <a href="/views/entrada.php">
                     <h4 class="blog-underline">Guia para la decoracion de tu Hogar</h4>
                     <p class="meta-info">Escrito el: <span>20/03/2026</span> por: <span>Admin</span>.</p>
                     <p>
@@ -111,18 +84,7 @@
         </article>
     </main>
 
-    <footer class="footer seccion">
-        <div class="container footer__content">
-            <nav class="navbar--footer">
-                <a class="" href="/views/nosotros.html">Nosotros</a>
-                <a class="" href="/views/anuncios.html">Anuncios</a>
-                <a class="active" href="/views/blog.html">Blog</a>
-                <a class="" href="/views/contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los Derechos Reversados 2026 &copy;</p>
-    </footer>
+<?php
 
-    <script src="/build/js/bundle.min.js"></script>
-</body>
-</html>
+    incluir_template( 'footer' , $opt );
+?>

@@ -1,39 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/build/css/app.css">
-    <title>Bienes Raices</title>
-</head>
-<body>
-    <header class="header">
-        <div class="header__content container">
-            <div class="container--bar">
-                <div class="menu">
+<?php 
 
-                    <a href="/">
-                        <img class="menu__logo" loading="lazy" src="/build/img/logo.svg" alt="Logotipo de Bienes Raices">
-                    </a>
-    
-                    <div class="menu__bar">
-                        <img src="/build/img/barras.svg" alt="menu responsive">
-                    </div>
-                </div>
+    require '../includes/app.php';
+    require FUNCIONES_URL;
 
-                <nav class="navbar">
-                    <a href="/views/nosotros.html">Nosotros</a>
-                    <a href="/views/anuncios.html">Anuncios</a>
-                    <a href="/views/blog.html">Blog</a>
-                    <a href="/views/contacto.html">Contacto</a>
-                    <div class="dark-mode-boton">
-                        <img src="/build/img/dark-mode.svg" alt="darkmode">
-                    </div>
-                </nav>
+    $opt = [ 'pagina' => 'propiedad' ];
 
-            </div> <!--.container--bar-->
-        </div>
-    </header>
+    incluir_template( 'header' , $opt );
+?>
 
     <main class="container seccion contenido-centrado">
         <h1>Casa Frente al Bosque</h1>
@@ -64,23 +37,12 @@
                 </ul>
                 <p>Proin consequat viverra sapien, malesuada tempor tortor feugiat vitae. In dictum felis et nunc aliquet molestie. Proin tristique commodo felis, sed auctor elit auctor pulvinar. Nunc porta, nibh quis convallis sollicitudin, arcu nisl semper mi, vitae sagittis lorem dolor non risus. Vivamus accumsan maximus est, eu mollis mi. Proin id nisl vel odio semper hendrerit. Nunc porta in justo finibus tempor. Suspendisse lobortis dolor quis elit suscipit molestie. Sed condimentum, erat at tempor finibus, urna nisi fermentum est, a dignissim nisi libero vel est. Donec et imperdiet augue. Curabitur malesuada sodales congue. Suspendisse potenti. Ut sit amet convallis nisi.</p>
                 <p>Aliquam lectus magna, luctus vel gravida nec, iaculis ut augue. Praesent ac enim lorem. Quisque ac dignissim sem, non condimentum orci. Morbi a iaculis neque, ac euismod felis. Fusce augue quam, fermentum sed turpis nec, hendrerit dapibus ante. Cras mattis laoreet nibh, quis tincidunt odio fermentum vel. Nulla facilisi.</p>
-                <a href="/views/contacto.html" class="boton--amarillo d-inline text-uppercase">comprar ahora</a>
+                <a href="/views/contacto.php" class="boton--amarillo d-inline text-uppercase">comprar ahora</a>
             </div> <!--.propiedades__content-->
         </div> <!--.propiedades__card-->
     </main>
 
-    <footer class="footer seccion">
-        <div class="container footer__content">
-            <nav class="navbar--footer">
-                <a href="/views/nosotros.html">Nosotros</a>
-                <a href="/views/anuncios.html">Anuncios</a>
-                <a href="/views/blog.html">Blog</a>
-                <a href="/views/contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los Derechos Reversados 2026 &copy;</p>
-    </footer>
+<?php
 
-    <script src="/build/js/bundle.min.js"></script>
-</body>
-</html>
+    incluir_template( 'footer' , $opt );
+?>

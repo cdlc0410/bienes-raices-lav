@@ -20,9 +20,6 @@
     padding: 1rem 0;
 
     &.landing {
-        @include m.tablet {
-            min-height: 65rem;
-        }
 
         .header__content {
             & {
@@ -34,21 +31,20 @@
     }
 
 
-}
-
-.header__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    .header__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     
-
-    h1 {
-        margin: 0 2rem;
-        text-align: left;
-        color: v.$blanco;
-        font-weight: v.$bold;
-        line-height: 2;
-        max-width: 60rem;
+        
+    
+        h1 {
+            margin: 0 2rem;
+            text-align: left;
+            color: v.$blanco;
+            font-weight: v.$bold;
+            line-height: 2;
+            max-width: 60rem;
+        }
     }
 }

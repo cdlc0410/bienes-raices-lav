@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/build/css/app.css">
-    <title>Bienes Raices</title>
+    <title><?= ucwords($opt['pagina']) ?></title>
 </head>
 <body>
-    <header class="header">
+    <header class="header <?= $opt['landing'] ? "landing" : "" ?>">
         <div class="header__content container">
             <div class="container--bar">
                 <div class="menu">
@@ -22,35 +22,17 @@
                 </div>
 
                 <nav class="navbar">
-                    <a href="/views/nosotros.html">Nosotros</a>
-                    <a href="/views/anuncios.html">Anuncios</a>
-                    <a href="/views/blog.html">Blog</a>
-                    <a href="/views/contacto.html">Contacto</a>
+                    <?php include 'nav.php'; ?>
                     <div class="dark-mode-boton">
                         <img src="/build/img/dark-mode.svg" alt="darkmode">
                     </div>
                 </nav>
 
             </div> <!--.container--bar-->
+
+            <?php if($opt['landing']) { ?>
+                <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+            <?php } ?>
+            
         </div>
     </header>
-
-    <main class="container seccion">
-        <h1>Titulo Pagina</h1>
-    </main>
-
-    <footer class="footer seccion">
-        <div class="container footer__content">
-            <nav class="navbar--footer">
-                <a href="/views/nosotros.html">Nosotros</a>
-                <a href="/views/anuncios.html">Anuncios</a>
-                <a href="/views/blog.html">Blog</a>
-                <a href="/views/contacto.html">Contacto</a>
-            </nav>
-        </div>
-        <p class="copyright">Todos los Derechos Reversados 2026 &copy;</p>
-    </footer>
-
-    <script src="/build/js/bundle.min.js"></script>
-</body>
-</html>
